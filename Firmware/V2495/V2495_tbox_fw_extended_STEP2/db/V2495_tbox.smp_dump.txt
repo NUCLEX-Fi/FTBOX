@@ -1,0 +1,16 @@
+
+State Machine - |V2495|trigger_box:tbox|Logic_Analyzer:Logic_Analyzer_1|sm_state_cs
+Name sm_state_cs.rearm sm_state_cs.wait_mem_full sm_state_cs.got_trigger sm_state_cs.wait_trigger sm_state_cs.mem_full 
+sm_state_cs.mem_full 0 0 0 0 0 
+sm_state_cs.wait_trigger 0 0 0 1 1 
+sm_state_cs.got_trigger 0 0 1 0 1 
+sm_state_cs.wait_mem_full 0 1 0 0 1 
+sm_state_cs.rearm 1 0 0 0 1 
+
+State Machine - |V2495|lb_int:I_LBUS_INTERFACE|LBSTATE
+Name LBSTATE.LBREADH LBSTATE.LBREADL LBSTATE.LBWRITEH LBSTATE.LBWRITEL LBSTATE.LBIDLE 
+LBSTATE.LBIDLE 0 0 0 0 0 
+LBSTATE.LBWRITEL 0 0 0 1 1 
+LBSTATE.LBWRITEH 0 0 1 0 1 
+LBSTATE.LBREADL 0 1 0 0 1 
+LBSTATE.LBREADH 1 0 0 0 1 

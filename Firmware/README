@@ -1,0 +1,18 @@
+COMPILING V1495 FIRMWARE
+
+* open the project inside quartus (version 11 recommended)
+* compile the project
+
+
+
+
+
+
+
+
+COMPILING AND LOADING V2495 Firmware
+
+* open the project inside quartus (version 13 recommended, support for Cyclone5 FPGA installed)
+* compile the project
+* in the folder PROJECT_FOLDER/output_files find the .rpd file
+* using the CAENUpgraderGUI (available at www.caen.it) upload the .rpd file to the V2495 board

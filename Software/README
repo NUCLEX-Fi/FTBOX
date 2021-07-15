@@ -1,0 +1,33 @@
+REQUIRED PACKAGES & libraries
+
+root            >=6.14      www.root.cern.ch
+CAENVMElib                  https://www.caen.it/download/?filter=CAENVMELib%20Library
+
+COMPILATION & INSTALLATION
+
+1) cd to current directory
+2) execute 'make'
+3) with SU privileges execute 'make install'
+
+
+
+STORAGE DIRECTORY SETTING
+
+By default all configuration files are stored in the current user home directory in a subdirectory called FTBOXSAVE.  The directory can be changed by setting an environment variable FTBOX_DIR pointing to the desired storage directory.
+
+
+
+GUI
+To launch the GUI insert the command 'ftbox_gui #addr #name' where
+#addr is the 32 bit hexadecimal address of the board
+#name is the name of the board (used to retrieve the configuration files)
+
+
+OSCILLOSCOPE
+To launch the OSCILLOSCOPE insert the command 'ftbox_oscilloscope #addr #name' (se above for the meaning of #addr and #name)
+
+
+PROGRAMMER
+To launch the PROGRAMMER insert the command 'ftbox_programmer #addr #name' (se above for the meaning of #addr and #name)
+
+
